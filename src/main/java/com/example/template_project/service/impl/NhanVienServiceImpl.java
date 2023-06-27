@@ -48,6 +48,7 @@ public class NhanVienServiceImpl implements NhanVienService {
         NhanVien nhanVien = nhanVienById.get();
         nhanVien = nhanVienMapper.updateNhanVienRequestToNhanVienEntity(updateNhanVienRequest);
         return nhanVienMapper.nhanVienEntityToNhanVienResponse(nhanVienRepository.save(nhanVien));
+
     }
 
     @Override
